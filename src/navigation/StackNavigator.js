@@ -5,8 +5,8 @@ import HomeScreen from '../screens/HomeScreen';
 const Stack = createStackNavigator();
 
 const StackNavigator = () => (
-    <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Navigator initialRouteName="Search For A Recipe">
+        <Stack.Screen name="Search For A Recipe" component={HomeScreen} />
     </Stack.Navigator>
 );
 
