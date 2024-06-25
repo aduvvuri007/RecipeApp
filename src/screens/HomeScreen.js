@@ -7,13 +7,19 @@ const HomeScreen = ({ navigation }) => {
     const [search, setSearch] = useState('');
     const [isPressed, setIsPressed] = useState(false);
 
-    const renderRecipe = ({ item }) => (
-        <TouchableOpacity onPress={() => navigation.navigate('RecipeDetails', { recipe: item })}>
-            <View style={styles.recipeContainer}>
-                <Text style={styles.recipeTitle}>{item.title}</Text>
-            </View>
-        </TouchableOpacity>
-    );
+    const renderRecipe = ({ item }) => {
+
+        return (
+            <TouchableOpacity onPress={() => {
+                console.log('Navigating to RecipeDetails with item:', item); // Debugging code
+                navigation.navigate('Recipe Details', { recipe: item });
+            }}>
+                <View style={styles.recipeContainer}>
+                    <Text style={styles.recipeTitle}>{item.title}</Text>
+                </View>
+            </TouchableOpacity>
+        );
+    };
 
     return (
         <View style={styles.container}>
