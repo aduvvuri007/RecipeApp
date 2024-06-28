@@ -1,6 +1,6 @@
 // RecipeDetails.js
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, Linking, Button } from 'react-native';
 import axios from 'axios';
 import { decode } from 'html-entities';
 
